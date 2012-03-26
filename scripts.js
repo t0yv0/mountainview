@@ -3,7 +3,7 @@
     var gm = "gmail.com";
 
     function email(name, service) {
-	return name + "@" + service;
+	return "mailto:" + name + "@" + service;
     }
 
     function maintainerEmail() {
@@ -20,10 +20,10 @@
 
 	switch (link.getAttribute("class")) {
 	case "pastor":
-	    link.setAttribute("href", "malito:" + pastorEmail());
+	    link.setAttribute("href", pastorEmail());
 	    break;
 	case "maintainer":
-	    link.setAttribute("href", "malito:" + maintainerEmail());
+	    link.setAttribute("href", maintainerEmail());
 	    break;
 	}
     }
