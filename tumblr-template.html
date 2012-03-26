@@ -33,15 +33,6 @@
         <div>
           <div class="mvf-main">
 
-            {block:SearchPage}
-            {block:SearchResults}
-            <div class="search-results">{lang:SearchResultCount results for SearchQuery 2}</div>
-            {/block:SearchResults}
-            {block:NoSearchResults}
-            <div class="searchresults">{lang:No search results for SearchQuery 2}</div>
-            {/block:NoSearchResults}
-            {/block:SearchPage}
-
             {block:Posts}
             <div class="post">
 
@@ -201,15 +192,6 @@
             <div class="pages ask_and_submit">
               {block:AskEnabled}<a href="/ask" class="page">{AskLabel}</a>{/block:AskEnabled}
               {block:SubmissionsEnabled}<a href="/submit" class="page">{SubmitLabel}</a>{/block:SubmissionsEnabled}
-            </div>
-
-            <div class="search">
-              <form action="/search" method="get" id="search-form">
-                <input type="hidden" name="t" value="{Name}" />
-                <input type="hidden" name="scope" value="all_of_tumblr" />
-                <input type="text" name="q" class="query" value="{SearchQuery}" />
-                <input type="submit" value="{lang:Search}" class="submit" />
-              </form>
             </div>
 
             {block:Twitter}
