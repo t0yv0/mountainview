@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="{Favicon}" />
     <link rel="apple-touch-icon" href="{PortraitURL-128}"/>
     <link rel="alternate" type="application/rss+xml" href="{RSS}" />
-    <link rel="stylesheet" type="text/css" href="http://raw.github.com/toyvo/mountainview/master/style.css" />
+    <link rel="stylesheet" type="text/css" href="http://toyvo.github.com/mountainview/style.css" />
   </head>
   <body>
 
@@ -27,7 +27,7 @@
     <div class="mvf-body">
       <div class="mvf-header">	
 	<div>Accept the Love ........ Share the Vision</div>
-	<img src="http://raw.github.com/toyvo/mountainview/master/images/mountain-view.png" alt="Mountain View Fellowship" width="300" />
+	<img src="http://toyvo.github.com/mountainview/images/mountain-view.png" alt="Mountain View Fellowship" width="300" />
       </div>
       <div class="table">
 	<div>
@@ -90,7 +90,7 @@
               {/block:Quote}
               
               {block:Text}
-              {block:Title}<div class="title">{Title}</div>{/block:Title}
+              {block:Title}<h1>{Title}</h1>{/block:Title}
               <div class="copy">{Body}</div>
               {/block:Text}
               
@@ -104,7 +104,7 @@
               
               {block:Chat}
               {block:Title}
-	      <div class="title">{Title}</div>
+	      <h1>{Title}</h1>
 	      {/block:Title}
               <div class="chat">
 		<div class="lines">
@@ -197,7 +197,7 @@
             <div class="avatar"><a href="/"><img src="{PortraitURL-128}" alt="avatar" /></a></div>
             <div class="description">{Description}</div>
             
-            <div class="pages" class="ask_and_submit">
+            <div class="pages ask_and_submit">
               {block:AskEnabled}<a href="/ask" class="page">{AskLabel}</a>{/block:AskEnabled}
               {block:SubmissionsEnabled}<a href="/submit" class="page">{SubmitLabel}</a>{/block:SubmissionsEnabled}
             </div>
@@ -247,10 +247,45 @@
       </div>
     </div>
       
+
     <div class="mvf-footer">
-      <div class="copyright">&copy; {CopyrightYears}
-	<a href="http://www.tumblr.com">{lang:Powered by Tumblr}</a></div>
-    </div>
+      <div>
+	<div class="table">
+	  <div>
+	    <div>
+	      <h4>Address</h4>
+	      <address>Mountain View Fellowship
+		Church of the Brethren
+		8601 McGaheysville Rd
+		McGaheysville, VA 22840</address>
+	    </div>
+	    <div>
+	      <h4>Contacts</h4>
+	      <dl>
+		<dt>Church Phone</dt>
+		<dd>540-298-9008</dd>
+		<dt>Church Pastor</dt>
+		<dd><a id="pastor">Wayne Pence</a></dd>
+		<dt>Website Comments</dt>
+		<dd><a id="maintainer">L L Reid</a></dd>
+	      </dl>
+	    </div>
+	    <div>
+	      <h4>Service Times</h4>
+	      <dl>
+		<dt>Sunday Worship</dt>
+		<dd>9:45</dd>
+		<dt>Sunday Fellowship</dt>
+		<dd>10:45</dd>
+		<dt>Sunday School</dt>
+		<dd>11:00</dd>
+		<dt>Wednesday Prayer</dt>
+		<dd>7:00 PM</dd>
+	      </dl>
+	    </div>
+	  </div>
+	</div>
+      </div>
     
     {block:Twitter}
     <script type="text/javascript" src="/tweets.js"></script>

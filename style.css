@@ -50,7 +50,7 @@ h1, h2, h3, h4, h5, h6
     min-height: 480px;
 }
 
-.mvf-main, .mvf-footer
+.mvf-main
 {
     padding: 0 1em;
 }
@@ -88,6 +88,7 @@ h1, h2, h3, h4, h5, h6
 
 .table > div > div
 {
+    vertical-align: top;
     display: table-cell;
 }
 
@@ -164,4 +165,69 @@ a:hover
 {
     width: 15em;
     padding: 0 1em;
+}
+
+.mvf-footer
+{
+    color: #ddddff;
+    background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0.25, rgb(25,25,75)),
+	color-stop(0.82, rgb(0,0,0))
+    );
+}
+
+.mvf-footer a
+{
+    color: limegreen;
+}
+
+.mvf-footer a:hover
+{
+    color: lime;
+}
+
+.mvf-footer h1, .mvf-footer h2, .mvf-footer h3, .mvf-footer h4
+{
+    color: yellow;
+    font-size: larger;
+}
+
+.mvf-footer > div > div.table
+{
+    font-size: smaller;
+    margin: auto;
+}
+
+.mvf-footer > div > div.table > div > div
+{
+    padding: 0 1em;
+    min-width: 12em;
+    max-width: 20em;
+}
+
+.mvf-footer dt
+{
+    float: left;
+    width: 10em;
+}
+
+.mvf-footer dd
+{
+    float: right;
+}
+
+.mvf-footer > div
+{
+    padding-bottom: 1em;
+    width: 60em;
+    margin: auto;
+    background: #08081f;
+}
+
+address
+{
+    white-space: pre-line;
 }
