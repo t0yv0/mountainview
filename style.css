@@ -170,12 +170,18 @@ a:hover
 .mvf-footer
 {
     color: #ddddff;
+    background-image: linear-gradient(bottom, rgb(25,25,75) 3%, rgb(0,0,0) 75%);
+    background-image: -o-linear-gradient(bottom, rgb(25,25,75) 3%, rgb(0,0,0) 75%);
+    background-image: -moz-linear-gradient(bottom, rgb(25,25,75) 3%, rgb(0,0,0) 75%);
+    background-image: -webkit-linear-gradient(bottom, rgb(25,25,75) 3%, rgb(0,0,0) 75%);
+    background-image: -ms-linear-gradient(bottom, rgb(25,25,75) 3%, rgb(0,0,0) 75%);
+
     background-image: -webkit-gradient(
 	linear,
 	left bottom,
 	left top,
-	color-stop(0.25, rgb(25,25,75)),
-	color-stop(0.82, rgb(0,0,0))
+	color-stop(0.03, rgb(25,25,75)),
+	color-stop(0.75, rgb(0,0,0))
     );
 }
 
