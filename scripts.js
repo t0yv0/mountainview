@@ -1,0 +1,30 @@
+(function () {
+    var aol = "aol.com";
+    var gm = "gmail.com";
+
+    function email(name, service) {
+	return name + "@" + service;
+    }
+
+    function maintainerEmail() {
+	return email("lleereid", gm);
+    }
+
+    function pastorEmail() {
+	return email("wpencemvf", aol);
+    }
+
+    var links = document.getElementsByTagName("a");
+    for (var i=0; i < links.length; i++) {
+	var link = links[i];
+
+	switch (link.getAttribute("class")) {
+	case "pastor":
+	    link.setAttribute("href", "malito:" + pastorEmail());
+	    break;
+	case "maintainer":
+	    link.setAttribute("href", "malito:" + maintainerEmail());
+	    break;
+	}
+    }
+})();

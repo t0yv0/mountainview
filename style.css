@@ -231,3 +231,28 @@ address
 {
     white-space: pre-line;
 }
+
+.avatar img
+{
+    box-shadow: 2px 2px 2px 2px #336;
+    margin: 0.5em 0;
+}
+
+.buttons a
+{
+    display: block;
+    padding-right: 1em;
+}
+
+a img
+{
+    border: none;
+}
+
+.search
+{
+    border-top: 1px dotted #ccccff;
+    border-bottom: 1px dotted #ccccff;
+    padding: 0.5em 0;
+    margin: 1em 0;
+}
